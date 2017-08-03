@@ -1,0 +1,74 @@
+ <div class="col-md-3">
+
+ <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>栏目</strong>
+                        </li>
+                        {volist name="navres" id="vo"}
+                        <li class="list-group-item">
+                            <a  href="
+                            {if condition="$vo['type'] eq 0"}
+                            {:url('lst/index',array('cateid'=>$vo['id']))}
+                            {else /}
+                            {:url('guest/index',array('cateid'=>$vo['id']))}
+                            {/if} ">
+                           {$vo.catename}</a>
+                        </li>
+                        {/volist}
+                        </ul>
+                        <!-- <br /> -->
+                         <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>最热文章</strong>
+                        </li>
+                         {volist name="hotartres" id="vo"}
+                        <li class="list-group-item">
+                            <a  href="
+                            
+                            {:url('article/index',array('artid'=>$vo['id']))}
+                            
+                            
+                             ">
+                             {$vo.title}
+                           </a>
+                        </li>
+                        {/volist}
+                    </ul>
+                    <br />
+
+                    <ul class="list-group">
+                        <li class="list-group-item">广告
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">
+                                <img src="__PUBLIC__/static/index/images/ad1.jpg" class="img-responsive" />
+                            </a>
+                            <br />
+                            <a href="#">
+                                <img src="__PUBLIC__/static/index/images/ad2.jpg" class="img-responsive" />
+                            </a>
+                        </li>
+                    </ul>
+
+                  <!--   <br />
+                    <div  >
+                        <div class="panel panel-default" >
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="text-align:center">留言板</h3>
+                            </div>
+                            <div class="panel-body" >
+                                昵称：<input type="text" class="form-control" size="1" placeholder="你的昵称" /><br />
+                                邮箱：
+                                <input type="text" class="form-control" placeholder="你的邮箱" /><br />
+                                内容：
+                                <textarea rows="10" cols="30" >
+                                
+                                </textarea>
+                                
+                                <hr />
+                                <a href="#" class="btn btn-info btn-sm btn-block">提交</a>
+                            </div>
+                        </div>
+                    </div> -->
+             
+
