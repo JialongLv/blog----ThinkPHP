@@ -1,0 +1,1551 @@
+[ 2017-04-05T20:04:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.914196s][吞吐率：1.09req/s] [内存消耗：4,371.13kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001521s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.001519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000805s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.001004s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.001039s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T20:04:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.095577s][吞吐率：10.46req/s] [内存消耗：4,368.03kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001280s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000657s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000989s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T20:04:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user2.png
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user2.png [运行时间：0.100303s][吞吐率：9.97req/s] [内存消耗：4,368.21kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user2.png',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001373s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.005266s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000558s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T20:04:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/article/lst.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/article/lst.html [运行时间：0.202669s][吞吐率：4.93req/s] [内存消耗：4,571.12kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->lst[ C:\wamp64\www\blog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\article\lst.html [ array (
+  0 => 'artres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001340s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 0,25 [ RunTime:0.000938s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T20:04:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public//admin/js/libs
+[ log ] 127.0.0.1/blog/public//admin/js/libs [运行时间：0.115081s][吞吐率：8.69req/s] [内存消耗：2,485.95kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'js',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:49+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.265967s][吞吐率：3.76req/s] [内存消耗：4,634.19kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000826s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001582s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.001040s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:49+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user2.png
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user2.png [运行时间：0.138360s][吞吐率：7.23req/s] [内存消耗：4,368.21kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user2.png',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001609s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001377s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.001336s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000924s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001485s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000807s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:49+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.153005s][吞吐率：6.54req/s] [内存消耗：4,368.07kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001631s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.001389s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.001002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001550s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000646s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:50+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/article/lst.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/article/lst.html [运行时间：0.112651s][吞吐率：8.88req/s] [内存消耗：4,571.12kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->lst[ C:\wamp64\www\blog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\article\lst.html [ array (
+  0 => 'artres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001196s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 1 [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 0,25 [ RunTime:0.000672s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:50+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public//admin/js/libs
+[ log ] 127.0.0.1/blog/public//admin/js/libs [运行时间：0.056742s][吞吐率：17.62req/s] [内存消耗：2,485.95kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'js',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:53+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.097329s][吞吐率：10.27req/s] [内存消耗：4,371.40kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001308s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000651s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000970s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:53+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user2.png
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user2.png [运行时间：0.106026s][吞吐率：9.43req/s] [内存消耗：4,368.21kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user2.png',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001379s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000614s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001090s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000508s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:18:53+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.117826s][吞吐率：8.49req/s] [内存消耗：4,368.07kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001747s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000617s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001190s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:19:06+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.154430s][吞吐率：6.48req/s] [内存消耗：4,634.77kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001388s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000518s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000648s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:19:06+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user2.png
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user2.png [运行时间：0.113157s][吞吐率：8.84req/s] [内存消耗：4,368.21kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user2.png',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001197s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000696s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000670s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:19:06+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.123943s][吞吐率：8.07req/s] [内存消耗：4,368.07kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001235s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000651s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002224s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:20:09+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.165332s][吞吐率：6.05req/s] [内存消耗：4,634.70kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010209s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000571s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001224s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000510s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:20:09+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.110226s][吞吐率：9.07req/s] [内存消耗：4,368.27kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001308s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.002311s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000821s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000515s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:24:24+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.160799s][吞吐率：6.22req/s] [内存消耗：4,634.66kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001411s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000556s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001180s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000803s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:24:24+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public//static/index/images/580.png
+[ log ] 127.0.0.1/blog/public//static/index/images/580.png [运行时间：0.062410s][吞吐率：16.02req/s] [内存消耗：2,485.04kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:24:24+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.116969s][吞吐率：8.55req/s] [内存消耗：4,368.27kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001268s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000715s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001085s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000574s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:24:44+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.147282s][吞吐率：6.79req/s] [内存消耗：4,634.66kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001313s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000553s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001167s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000494s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:24:44+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.107656s][吞吐率：9.29req/s] [内存消耗：4,368.27kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001403s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000691s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000787s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:25:01+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.158724s][吞吐率：6.30req/s] [内存消耗：4,634.66kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001267s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000522s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001314s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000534s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:25:01+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/assets/img/user.gif
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/assets/img/user.gif [运行时间：0.103994s][吞吐率：9.62req/s] [内存消耗：4,368.27kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => 'assets',
+  'img' => 'user.gif',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001151s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000592s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001557s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 0 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = 'assets' LIMIT 1 [ RunTime:0.000529s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:27:01+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.160905s][吞吐率：6.21req/s] [内存消耗：4,634.65kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010288s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000543s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000541s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:28:35+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/2.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/2.html [运行时间：0.094723s][吞吐率：10.56req/s] [内存消耗：4,371.45kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000559s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001099s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 2 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '2' LIMIT 1 [ RunTime:0.000470s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:31:00+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/2.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/2.html [运行时间：0.091469s][吞吐率：10.93req/s] [内存消耗：4,371.42kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/index/article/index/artid/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001317s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000594s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001416s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 2 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '2' LIMIT 1 [ RunTime:0.000554s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:37+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/login
+[ log ] 127.0.0.1/blog/public/index.php/admin/login [运行时间：0.069926s][吞吐率：14.30req/s] [内存消耗：2,922.69kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\blog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:42+08:00 ] 127.0.0.1 127.0.0.1 POST /blog/public/index.php/admin/login
+[ log ] 127.0.0.1/blog/public/index.php/admin/login [运行时间：0.143334s][吞吐率：6.98req/s] [内存消耗：4,816.31kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\blog\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp64\www\blog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001324s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.005565s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000578s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:45+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/index/index.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/index/index.html [运行时间：0.118187s][吞吐率：8.46req/s] [内存消耗：3,037.30kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:49+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/guest/lst.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/guest/lst.html [运行时间：0.157150s][吞吐率：6.36req/s] [内存消耗：2,522.73kb] [文件加载：41]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'guest',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[C:\wamp64\www\blog\application\admin\controller\Guest.php:15]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:50+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/index/index.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/index/index.html [运行时间：0.057305s][吞吐率：17.45req/s] [内存消耗：3,037.30kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/login',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp64\www\blog\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:52+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/article/lst.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/article/lst.html [运行时间：0.103254s][吞吐率：9.68req/s] [内存消耗：4,571.12kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->lst[ C:\wamp64\www\blog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\article\lst.html [ array (
+  0 => 'artres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 0,25 [ RunTime:0.000504s ]
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:52+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public//admin/js/libs
+[ log ] 127.0.0.1/blog/public//admin/js/libs [运行时间：0.046523s][吞吐率：21.49req/s] [内存消耗：2,485.95kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'js',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-05T21:32:53+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/index/article/index/artid/1.html
+[ log ] 127.0.0.1/blog/public/index.php/index/article/index/artid/1.html [运行时间：0.160690s][吞吐率：6.22req/s] [内存消耗：4,634.55kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ C:\wamp64\www\blog\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/index\view\article\article.html [ array (
+  0 => 'navres',
+  1 => 'hotartres',
+  2 => 'arts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY id asc [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` ORDER BY click desc LIMIT 10 [ RunTime:0.000732s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001139s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `blog_article`  SET `click`=click+1  WHERE  `id` = 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `a`.`keywords`,`a`.`pic`,`a`.`title`,`a`.`content`,`a`.`time`,`a`.`click`,`a`.`id`,`a`.`cateid`,`c`.`catename` FROM `blog_article` `a` LEFT JOIN `blog_cate` `c` ON `c`.`id`=`a`.`cateid` WHERE  `a`.`id` = '1' LIMIT 1 [ RunTime:0.000489s ]
+
+---------------------------------------------------------------

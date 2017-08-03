@@ -1,0 +1,62 @@
+[ 2017-07-01T00:01:19+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/login
+[ log ] 127.0.0.1/blog/public/index.php/admin/login [运行时间：0.673917s][吞吐率：1.48req/s] [内存消耗：2,177.25kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => 'PHPSESSID=vae33ujp7o6mu0d540pvd6d6a4',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\blog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-01T00:01:49+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/login
+[ log ] 127.0.0.1/blog/public/index.php/admin/login [运行时间：0.038701s][吞吐率：25.84req/s] [内存消耗：2,177.23kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => 'PHPSESSID=vae33ujp7o6mu0d540pvd6d6a4',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\wamp64\www\blog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

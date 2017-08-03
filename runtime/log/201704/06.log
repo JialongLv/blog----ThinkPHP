@@ -1,0 +1,73 @@
+[ 2017-04-06T16:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public/index.php/admin/article/lst.html
+[ log ] 127.0.0.1/blog/public/index.php/admin/article/lst.html [运行时间：0.660772s][吞吐率：1.51req/s] [内存消耗：4,571.11kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->lst[ C:\wamp64\www\blog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp64\www\blog\public/../application/admin\view\article\lst.html [ array (
+  0 => 'artres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001564s ] mysql:dbname=myblog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 1 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` `a` RIGHT JOIN `blog_article` `c` ON `c`.`cateid`=`a`.`id` LIMIT 0,25 [ RunTime:0.000822s ]
+
+---------------------------------------------------------------
+[ 2017-04-06T16:45:17+08:00 ] 127.0.0.1 127.0.0.1 GET /blog/public//admin/js/libs
+[ log ] 127.0.0.1/blog/public//admin/js/libs [运行时间：0.149818s][吞吐率：6.67req/s] [内存消耗：2,485.95kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp64\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'js',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/blog/public/index.php/admin/article/lst.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,en-CA;q=0.2',
+  'cookie' => '_ga=GA1.1.1330015033.1473246793; UM_distinctid=15ab895b67662c-0f2952577180c6-57e1b3c-144000-15ab895b6777fe; PHPSESSID=6gcsp6thbd9nb3c7mnnp7a6s06; Hm_lvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357123; Hm_lpvt_f7af8e8a38a0e72bc5add237ff33d4d4=1490357593; CNZZDATA681872=cnzz_eid%3D907172001-1488945760-%26ntime%3D1491315004',
+  'alexatoolbar-alx_ns_ph' => 'AlexaToolbar/alx-4.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
